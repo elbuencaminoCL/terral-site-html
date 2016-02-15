@@ -1,5 +1,5 @@
 /* 
-Theme Name: Hotel Terral - Tótem
+Theme Name: Hotel Terral - web
 Theme URL: 
 Version: 2.0
 Author: El Buen Camino
@@ -12,7 +12,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 @charset "utf-8";
 
 /* CSS Document */
-@import url('css/totem.css');
+@import url('css/terral.css');
 
 /******CLEARFIX******/
 .clearfix {*zoom:1; display:block;}
