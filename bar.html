@@ -7,29 +7,21 @@
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,700,300' rel='stylesheet' type='text/css'>
 	<link href="css/bootstrap.css" rel="stylesheet" media="screen">
 	<link href="style.css" rel="stylesheet" media="screen">
-	<link href="css/jquery.bxslider.css" rel="stylesheet" media="screen">
 	<script src="js/jquery-1.10.2.js"></script>
 	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/jquery.jcarousel.min.js"></script>
 	<script src="js/bootstrap.js"></script>
 	<script src="js/jquery.lettering.js" type="text/javascript"></script>
-	<script src="js/jquery.bxslider.js" type="text/javascript"></script>
-	<script type="text/javascript">
-	  	$(document).ready(function(){
-			$('.bxslider').bxSlider({
-			  pagerCustom: '#bx-pager'
-			});
-	  	});
-	</script>
 	<!--[if IE]>
 	<script src="js/ie9.js"></script>
 	<![endif]-->
 </head>
 
-<body class="page spa">
+<body class="page bar">
 	<div class="wrapper">
 		<!--header-->
 		<header id="header" class="header clearfix shadow">
-			<img src="imag/main/main_spa.png" alt="Home" class="img-responsive main-image shadow" />
+			<img src="imag/main/main_bar.png" alt="Home" class="img-responsive main-image shadow" />
 			<div class="cont-header container">
 				<div class="auxi-data clearfix">
 					<address>San Martín 387, Vicu&ntilde;a, Chile. +56 51 241 2217</address>
@@ -46,7 +38,7 @@
 					</ul>
 				</nav>
 				<div class="intro-site">
-					<h2>Nuestro Spa</h2>
+					<h3></h3>
 				</div>
 			</div>
 		</header>
@@ -56,57 +48,16 @@
 		<div id="main" class="clearfix">
 			<div id="intro" class="clearfix shadow block">
 				<div class="container">
-					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-						<div class="intro-spa col-lg-10 col-md-10 col-sm-11 col-xs-11 no-float">
-							<? the_content();?>
-						</div>
-					<div class="cont-col col-lg-12 col-md-12 col-sm-12 col-xs-12">
-						<h3 class="clearfix">Servicios del Spa</h3>
-						<div class="clearfix">
-							<div class="col col-lg-4 col-md-4 col-sm-4 col-xs-12">
-								<div class="box-shadow relative">
-									<div class="relative">
-										<img src="imag/home/spa01.png" class="img-responsive" />
-										<h4><a href="#">Masajes</a></h4>
-									</div>
-									<p>Al interior de Vicuña y cerca de viñedos se encuentra Alfa Aldea, un observatorio con anfiteatro al aire libre, atención personalizada, y una cúpula desde donde puedes observar la galaxia a través de sus modernos telescopios.</p>
-									<div class="white-shadow"></div>
-								</div>
-							</div>
-							<div class="col col-lg-4 col-md-4 col-sm-4 col-xs-12">
-								<div class="box-shadow relative">
-									<div class="relative">
-										<img src="imag/home/spa02.png" class="img-responsive" />
-										<h4><a href="#">Hidromasajes</a></h4>
-									</div>
-									<p>38 kilómetros al sur de Vicuña, en la localidad de Pisco de Elqui, comienza esta Astro Experiencia. En en el sector de quebrada Las Gredas, en la montaña, el guía relatará los misterios que se esconden tras la noche estrellada, y podrás</p>
-									<div class="white-shadow"></div>
-								</div>
-							</div>
-							<div class="col col-lg-4 col-md-4 col-sm-4 col-xs-12">
-								<div class="box-shadow relative">
-									<div class="relative">
-										<img src="imag/home/spa03.png" class="img-responsive" />
-										<h4><a href="#">Yoga</a></h4>
-									</div>
-									<p>Al caer la noche redescubre los cielos del Valle de Elqui con este trekking de 4 kilómetros por la montaña. Junto a un experimentado guía caminarás por senderos arrieros de Pisco de Elqui,</p>
-									<div class="white-shadow"></div>
-								</div>
-							</div>
-						</div>
+					<div class="col-lg-10 col-md-10 col-sm-11 col-xs-11 no-float">
+						<p>En Pataska Restaurante nuestra propuesta gastronómica mezcla sabores mediterráneos con ingredientes típicos del Valle del Elqui, utilizados por la cultura Diaguita. Te invitamos a disfrutar de una carta variada en corte de carnes, pescados, pastas y pizzas, coloridas ensaladas y una delicada repostería, siempre en una atmósfera acogedora. Y para finalizar con un día de ensueño, te esperamos en nuestro Bar Bajo las Estrellas ubicado en la terraza panorámica. Un lugar de encuentro al aire libre, donde el atardecer y la noche estrellada son la postal perfecta para degustar un trago, compartir una conversación amena y disfrutar de la mejor música.<br/><br/>Horario de atención: lunes a domingo de 13:00 a 22:30</p>
 					</div>
 				</div>
 			</div>
-			<div id="gallery" class="block-image clearfix shadow block">
-				<ul class="bxslider">
-				  	<li><img src="imag/home/spa_galeria.png" class="img-responsive" /></li>
-				  	<li><img src="imag/home/spa_galeria.png" class="img-responsive" /></li>
-				  	<li><img src="imag/home/spa_galeria.png" class="img-responsive" /></li>
-				</ul>
-				<div id="bx-pager">
-				  	<a data-slide-index="0" href=""><img src="imag/home/thumb01.jpg" /></a>
-				  	<a data-slide-index="1" href=""><img src="imag/home/thumb01.jpg" /></a>
-				  	<a data-slide-index="2" href=""><img src="imag/home/thumb01.jpg" /></a>
+			<div class="block-image clearfix shadow block">
+				<div class="container">
+					<div class="cont-col col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<h3 class="clearfix">Carta Bar</h3>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -115,7 +66,7 @@
 		<!--FOOTER-->
 		<footer id="footer" class="clearfix">
 			<div class="shadow-foot">
-				<img src="imag/footer/foot_spa.png" class="img-responsive back-foot" />
+				<img src="imag/footer/foot_rest.png" class="img-responsive back-foot" />
 				<div class="deg"></div>
 			</div>
 			<div class="container">
